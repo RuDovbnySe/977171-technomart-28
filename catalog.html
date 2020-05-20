@@ -5,43 +5,45 @@
   <title>Техномарт</title>
 </head>
 
-<body>
+<body style="background: aquamarine">
 
 <header>
   <div>
     <a href="index.html">
-      <img src="" alt="Техномарт" width="220" height="47">
+      <img src="img\Logo.png" alt="Техномарт" width="220" height="47">
     </a>
     <label>
+      <img src="img\icon-search.svg" width="17" height="17">
       <span>Поиск</span>
       <input type="search">
     </label>
-    <a href="#nowhere">Закладки: 0</a>
-    <a href="#nowhere">Корзина: 0</a>
+    <a href="#nowhere"> <img src="img\icon-bookmark.svg"> Закладки: 0</a>
+    <a href="#nowhere"> <img src="img\icon-cart.svg"> Корзина: 0</a>
     <a href="#nowhere">Офрмить заказ</a>
   </div>
   <div>
-    <h1>Интернет-магазин <br>
-      строительных материалов <br>
+    <h1>Интернет-магазин
+      строительных материалов
       и инструментов для ремонта</h1>
     <div>
-      <a href="tel:+7(812)5550555">+7 (812) 555-05-55</a>
+      <a href="tel:+7(812)5550555"> <img src="img\icon-phone.svg"> +7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
     <div>
-      <a href="#nowhere"> Вход </a>
-      <a href="#nowhere"> Регистрация </a>
+      <a href="#nowhere"> <div style="background-image: url(data:img/icon-login.svg);)"> </div>
+        <!-- <img src="img\icon-login.svg"> --> Вход </a>
+      <a href="#nowhere">Регистрация</a>
     </div>
   </div>
   <nav>
     <ul>
-      <li><a href="index.html"> Главная </a></li>
-      <li><a> Компания </a></li>
-      <li><a href=""> Каталог </a></li>
-      <li><a href="#nowhere"> Новости </a></li>
-      <li><a href="#nowhere"> Спецпредложения </a></li>
-      <li><a href="#nowhere"> Доставка </a></li>
-      <li><a href="#nowhere"> Контакты </a></li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#nowhere">Компания</a></li>
+      <li><a href="">Каталог</a></li>
+      <li><a href="#nowhere">Новости</a></li>
+      <li><a href="#nowhere">Спецпредложения</a></li>
+      <li><a href="#nowhere">Доставка</a></li>
+      <li><a href="#nowhere">Контакты</a></li>
     </ul>
   </nav>
 </header>
@@ -49,10 +51,10 @@
 <main>
   <nav>
     <ul>
-      <li><a href="index.html"> Главная </a></li> <!--значёк домика вместо слова главная-->
-      <li><a href="index.html"> Каталог </a></li>
-      <li><a href="index.html"> Инструменты </a></li>
-      <li><a href="index.html"> Перфораторы </a></li>
+      <li><a href="index.html">Главная</a></li> <!--значёк домика вместо слова главная-->
+      <li><a href="index.html">Каталог</a></li>
+      <li><a href="index.html">Инструменты</a></li>
+      <li><a href="index.html">Перфораторы</a></li>
     </ul>
   </nav>
 
@@ -60,34 +62,44 @@
     <h2>Перфораторы</h2>
   </div>
 
-</section>
-  <h2>Сортировка:</h2>
+<section>
+  <h2>Сортировка: <!-- Тут будет форма для сортировки --></h2>
 </section>
 
-</section>
+<aside>
+  <form>
   <h2>Фильтр:</h2>
     <p>Цена:</p>
     <div>
-      <input type="range" disabled>
-      <input type="text">
-      <input type="text">
+     <!-- Тут будет шкала выбора цены -->
     </div>
-    <p> Производители: </p>
+    <p>Производители:</p>
     <ul>
-      <li> BOSCH </li>
-      <li> Интерскол </li>
-      <li> Makita </li>
-      <li> DeWalt </li>
-      <li> HITACHI </li>
+      <li>
+        <input type="checkbox" checked>
+        BOSCH</li>
+      <li>
+        <input type="checkbox" checked>
+        Интерскол</li>
+      <li>
+        <input type="checkbox" checked>
+        Makita</li>
+      <li>
+        <input type="checkbox" checked>
+        DeWalt</li>
+      <li>
+        <input type="checkbox" checked>
+        HITACHI</li>
     </ul>
 
-    <p> Питание: </p>
+    <p>Питание:</p>
     <ul>
-      <li> Аккумуляторные </li>
-      <li> Сетевые </li>
+      <li> <input type="radio">Аккумуляторные</li>
+      <li> <input type="radio">Сетевые</li>
     </ul>
-    <button type="button">Показать</button>
-</section>
+    <input type="submit" value="Показать" />
+  </form>
+</aside>
 
   <section>
     <ul>
@@ -262,7 +274,15 @@
         </article>
       </li>
     </ul>
-
+    </section>
+  <div>
+    <ul>
+      <li> <button type="button">1</button> </li>
+      <li> <button type="button">2</button> </li>
+      <li> <button type="button">3</button> </li>
+      <li> <button type="button">Следующая</button> </li>
+    </ul>
+  </div>
 </main>
 
 <footer>
@@ -273,11 +293,11 @@
       </a>
       <ul>
         <li>
-          <li><a href="#nowhere"> Компания </a></li>
-          <li><a href="#nowhere"> Новости </a></li>
-          <li><a href="catalog.html"> Каталог </a></li>
-          <li><a href="#nowhere"> Доставка </a></li>
-          <li><a href="#nowhere"> Контакты </a></li>
+          <li><a href="#nowhere">Компания</a></li>
+          <li><a href="#nowhere">Новости</a></li>
+          <li><a>Каталог</a></li>
+          <li><a href="#nowhere">Доставка</a></li>
+          <li><a href="#nowhere">Контакты</a></li>
         </li>
       </ul>
     </div>
@@ -288,10 +308,10 @@
       </p>
       <ul>
         <li>
-          <li><a href="#nowhere"> Материалы </a></li>
-          <li><a href="#nowhere"> Техника </a></li>
-          <li><a href="#nowhere"> Инструмент </a></li>
-          <li><a href="#nowhere"> Спецпредложения </a></li>
+          <li><a href="#nowhere">Материалы</a></li>
+          <li><a href="#nowhere">Техника</a></li>
+          <li><a href="#nowhere">Инструмент</a></li>
+          <li><a href="#nowhere">Спецпредложения</a></li>
         </li>
       </ul>
     </div>
@@ -303,22 +323,22 @@
     </p>
     <ul>
       <li>
-        <a href="#nowhere" aria-label="ВК"> ВК </a>
+        <a href="#nowhere" aria-label="ВК">ВК</a>
       </li>
       <li>
-        <a href="#nowhere" aria-label="Фейсбук"> Фейсбук </a>
+        <a href="#nowhere" aria-label="Фейсбук">Фейсбук</a>
       </li>
       <li>
-        <a href="#nowhere" aria-label="Инстарграм"> Инстарграм </a>
+        <a href="#nowhere" aria-label="Инстарграм">Инстарграм</a>
       </li>
     </ul>
     <p>
       Обратная связь:<br>
-      <a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a>
+      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
     <p>
       Разработано — <br>
-      <a href="htmlacademy.ru"> htmlacademy.ru </a>
+      <a href="htmlacademy.ru">htmlacademy.ru</a>
     </p>
   </div>
 </footer>

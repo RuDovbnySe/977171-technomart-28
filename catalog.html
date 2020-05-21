@@ -67,36 +67,49 @@
 </section>
 
 <aside>
-  <form>
   <h2>Фильтр:</h2>
-    <p>Цена:</p>
-    <div>
-     <!-- Тут будет шкала выбора цены -->
-    </div>
-    <p>Производители:</p>
-    <ul>
-      <li>
-        <input type="checkbox" checked>
-        BOSCH</li>
-      <li>
-        <input type="checkbox" checked>
-        Интерскол</li>
-      <li>
-        <input type="checkbox" checked>
-        Makita</li>
-      <li>
-        <input type="checkbox" checked>
-        DeWalt</li>
-      <li>
-        <input type="checkbox" checked>
-        HITACHI</li>
-    </ul>
+  <form action="https://eco.htmlacademy.ru" method="post">
+    <fieldset>
+      <legend>
+        Цена:
+      </legend>
+      <p>
+        <!-- Тут будет шкала выбора цены -->
+        <label> <input type="button" placeholder="0"></label>
+        <label> <input type="button" placeholder="30000"></label>
+      </p>
+      <p>
+        <label> <input type="text" placeholder="0"></label>
+      </p>
+      <p>
+        <label> <input type="text" placeholder="30000"></label>
+      </p>
+    </fieldset>
 
-    <p>Питание:</p>
+    <fieldset>
+    <legend>Производители:</legend>
     <ul>
-      <li> <input type="radio">Аккумуляторные</li>
-      <li> <input type="radio">Сетевые</li>
-    </ul>
+      <li>
+        <label> <input type="checkbox" name="Bosh" checked>BOSCH</label></li>
+      <li>
+        <label><input type="checkbox" name="Интерскол">Интерскол</label></li>
+      <li>
+        <label><input type="checkbox" name="Makita" checked>Makita</label></li>
+      <li>
+        <label><input type="checkbox" name="DeWalt">DeWalt</label></li>
+      <li>
+        <label><input type="checkbox" name="HITACHI">HITACHI</label></li>
+    </fieldset>
+
+    <fieldset>
+      <legend>Питание:</legend>
+      <ul>
+        <li>
+          <label><input type="radio" name="Аккумуляторные" checked>Аккумуляторные</label></li>
+        <li>
+          <label><input type="radio" name="Сетевые">Сетевые</label></li>
+      </ul>
+    </fieldset>
     <input type="submit" value="Показать" />
   </form>
 </aside>

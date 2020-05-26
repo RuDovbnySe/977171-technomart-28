@@ -3,11 +3,53 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
+  <style>
+    @font-face {
+      font-family: cuprum;
+      src: url("technomart\technomart\fonts\web\cuprum.woff2")format("woff2"), url("technomart\technomart\fonts\web\cuprum.woff")format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: cuprumbold;
+      url("technomart\technomart\fonts\web\cuprumbold2.woff2")format("woff2"),
+      url("technomart\technomart\fonts\web\cuprumbold.woff")format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: cuprumbolditalic;
+      src: url("technomart\technomart\fonts\web\cuprumolditalic.woff2") format("woff2") url("technomart\technomart\fonts\web\cuprumolditalic.woff2")format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: cuprumitalic;
+      src: url("technomart\technomart\fonts\web\cuprumitalic.woff2") format("woff2") url("technomart\technomart\fonts\web\cuprumitalic.woff2")format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: ptsans;
+      src: url("technomart\technomart\fonts\web\ptsans.woff2") format("woff2") url("technomart\technomart\fonts\web\ptsans.woff2")format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: ptsansbold;
+      src: url("technomart\technomart\fonts\web\ptsansbold.woff2") format("woff2") url("technomart\technomart\fonts\web\ptsansbold.woff2")format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+  </style>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
-<body style="background: aquamarine">
+<body>
 
-<header>
+<header class="main-header">
   <div>
     <a href="index.html">
       <img src="img\Logo.png" alt="Техномарт" width="220" height="47">
@@ -25,20 +67,22 @@
     <h1>Интернет-магазин
       строительных материалов
       и инструментов для ремонта</h1>
-    <p>
+    <div>
       <a href="tel:+7(812)5550555">
-        <p style="background-image: url(img/icon-phone.svg); width: 19px; height: 19px"></p>
-        <p>+7 (812) 555-05-55</p>
+        <div style="background-image: url(img/icon-phone.svg); width: 19px; height: 19px; background-repeat: no-repeat"></div>
+        <div>+7 (812) 555-05-55</div>
       </a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
     <div>
-      <a href="#nowhere"> <div style="background-image: url(data:img/icon-login.svg);)"> </div>
-        <!-- <img src="img\icon-login.svg"> --> Вход </a>
+      <a href="#nowhere">
+        <div style="background-image: url(data:img/icon-login.svg);)"> </div>
+        Вход
+      </a>
       <a href="#nowhere">Регистрация</a>
     </div>
   </div>
-  <nav>
+  <nav class="main-navigation container">
     <ul>
       <li><a href="">Главная</a></li>
       <li><a href="#nowhere">Компания</a></li>
@@ -80,8 +124,17 @@
         <img src="img\icon-car.svg">
     </div>
     <div>
-      <div>Перфораторы<a>Настоящие мужские игрушки<img src="img\slide-pefor.jpg"> </div>
-      <div>Дрели<a>Соседям на радость<img src="img\slide-drel.jpg"> </div>
+      <div>
+        <p>Перфораторы</p>
+        <a>
+          <p>Настоящие мужские игрушки</p>
+          <img src="img\slide-pefor.jpg"> </div>
+      <div>
+        <p>Дрели</p>
+        <a>
+          <p>Соседям на радость</p>
+          <img src="img\slide-drel.jpg"> </div>
+      <a href="catalog.html">Открыть каталог</a>
     </div>
 
   </section>
@@ -302,8 +355,8 @@
         Вы можете забрать товар сами,
         заехав в наш офис:
       </p>
-      <p style="background-image: url(img/Mape.svg); width: 300px; height: 158px"><br>
-      </p>
+      <div style="background-image: url(img/Mape.svg); width: 300px; height: 158px"><br>
+      </div>
 
     </section>
   </div>
@@ -364,13 +417,37 @@
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li> Разработано —
-          <a href="htmlacademy.ru">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </li>
       </ul>
     </p>
   </div>
 </footer>
-
+<section class="modal">
+  <div>
+    <p>
+      Ваше имя:
+      <input type="text" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      Ваш e-mail:
+      <input type="email" placeholder="email@example.com">
+    </p>
+    <p>
+      Тескт письма:
+      <input type="text" placeholder="В свободной форме">
+    </p>
+  </div>
+  <div>
+    <button>
+      Отправить
+    </button>
+  </div>
+</section>
+<section>
+  <div style="background-image: url(img/Map-popup.svg); width: 943px; height: 449px"><br>
+  <img src="img\icon-close.svg">
+</section>
 </body>
 
 </html>

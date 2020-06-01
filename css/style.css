@@ -45,6 +45,9 @@ ul {
   padding-top: 10px;
   justify-content: space-between;
 }
+.maim-search {
+  display: flex;
+}
 
 .features {
   display: flex;

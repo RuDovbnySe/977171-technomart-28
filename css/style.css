@@ -1,3 +1,41 @@
+@font-face {
+  font-family: cuprum;
+  src: url("technomart/technomart/fonts/web/cuprum.woff2")format("woff2"), url("technomart\technomart\fonts\web\cuprum.woff")format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: cuprumbold;
+url("technomart\technomart\fonts\web\cuprumbold2.woff2")format("woff2"),
+url("technomart\technomart\fonts\web\cuprumbold.woff")format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: cuprumbolditalic;
+  src: url("technomart\technomart\fonts\web\cuprumolditalic.woff2") format("woff2") url("technomart\technomart\fonts\web\cuprumolditalic.woff2")format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: cuprumitalic;
+  src: url("technomart\technomart\fonts\web\cuprumitalic.woff2") format("woff2") url("technomart\technomart\fonts\web\cuprumitalic.woff2")format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ptsans;
+  src: url("technomart\technomart\fonts\web\ptsans.woff2") format("woff2") url("technomart\technomart\fonts\web\ptsans.woff2")format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ptsansbold;
+  src: url("technomart\technomart\fonts\web\ptsansbold.woff2") format("woff2") url("technomart\technomart\fonts\web\ptsansbold.woff2")format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --basick-red: #EE3643;
   --basick-green: #63A63E;
@@ -16,90 +54,93 @@
   --light-grey: #EAEAEA;
   --main-nav: #32425C;
 }
-
+.body-back {
+  background-color: #5FBB2D;
+}
 body {
   width: 1200px;
-  margin: 0;
-  padding: 0;
   color: #FFFFFF;
   font-size: 18px;
   margin-left: auto;
   margin-right: auto;
 }
-a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
 ul {
   list-style: none;
 }
-.main-header {
+a {
+  text-decoration: none;
+}
+.page-header {
   background-color: var(--basick-background);
   color: var(--white);
-
 }
-.main-menu {
-  background-color: #293449;
-  height: 42px;
-  display: flex;
-  padding-top: 10px;
-  justify-content: space-between;
-}
-.maim-search {
-  display: flex;
-}
-
-.features {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 160px;
-  margin-right: 130px;
-
-}
-.features-text, .features-phone {
-  color: var(--basick-red);
-}
-.features-adress{
-  color: #32425C;
-  width: 250px;
-  font-size: 12px;
-  font-family: cuprum;
-  align-items: center;
-  text-align: center;
-}
-.features-text {
-  width: 197px;
-  font-size: 16px;
-  align-items: center;
-
-}
-.features-phone {
-  width: 270px;
-  text-align: center;
-}
-.main-nav-wraper {
-  background-color: #32425C;
+.page-header-wrap{
   margin-left: 130px;
   margin-right: 130px;
 }
-.site-nav {
+.page-header-top{
+background-color: #293449;
+height: 42px;
+}
+.page-header-wrap,
+.user-nav {
+  display: flex;
+}
+.page-header-search {
+  padding-left: 19px;
+}
+.main-nav {
+  background-color: #293449;
+  height: 42px;
+}
+.main-nav-list{
   display: flex;
   padding-top: 10px;
-  padding-bottom: 10px;
   justify-content: space-between;
-  padding-right: 47px;
-  padding-left: 52px;
+}
+.page-header-center {
+  display: flex;
+  margin-right: 130px;
+  margin-left: 130px;
+}
+.page-header-title {
+  width: 197px;
+  height: 71px;
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  align-items: center;
+  color: #EE3643;
+  margin-left: 30px;
 }
 
-.login-link {
-  color: #000000;
+.page-footer-top{
+  background-color: #32425C;
+}
+.page-footer-wrapper {
+  width: 940px;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.footer-nav-link,
+.footer-nav-link-yellow {
+  margin-left: 59px;
+}
+.page-footer-bottom{
+  background-color: #293449;
   display: flex;
 }
-.order{
-  width: 150px;
-  background-color: #5FBB2D;
-  text-align: center;
+.footer-social {
+  display: flex;
+  justify-content: center;
 }
-.login-link {
-  background-color: #FFFFFF;
+.footer-connect {
+  display: flex;
+  font-size: 16px;
 }
+
